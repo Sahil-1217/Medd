@@ -3,7 +3,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 
 // Resolve the full path to your app.js
-const appPath = path.join(__dirname, 'backend', 'src', 'app.js');
+const appPath = path.join(__dirname, 'backend', 'src', 'App.js');
 console.log('Attempting to start server from:', appPath);
 
 // Spawn the app.js process
