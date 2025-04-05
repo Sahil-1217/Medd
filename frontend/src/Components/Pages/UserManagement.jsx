@@ -66,7 +66,7 @@ function UserManagement() {
     const getUsers = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8001/admin/allUsers",
+          "https://medd-9.onrender.com/admin/allUsers",
           {
             withCredentials: true,
           }
@@ -94,7 +94,7 @@ function UserManagement() {
         role: role,
       };
       const { data } = await axios.post(
-        "http://localhost:8001/admin/removeUser",
+        "https://medd-9.onrender.com/admin/removeUser",
         body,
         {
           withCredentials: true,
@@ -131,7 +131,7 @@ function UserManagement() {
         email: mail,
       };
       const { data } = await axios.post(
-        "http://localhost:8001/administration",
+        "https://medd-9.onrender.com/administration",
         body,
         {
           withCredentials: true,

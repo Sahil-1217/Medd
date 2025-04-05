@@ -61,7 +61,7 @@ function PharmacistReqs() {
     const getReqs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8001/admin/applications",
+          "https://medd-9.onrender.com/admin/applications",
           {
             withCredentials: true,
           }
@@ -93,7 +93,7 @@ function PharmacistReqs() {
       // ]router.post('/applications/accept-registeration/:id',acceptRegRequest);
 
       await axios.post(
-        `http://localhost:8001/admin/applications/accept-registeration/${viewReq._id}`,
+        `https://medd-9.onrender.com/admin/applications/accept-registeration/${viewReq._id}`,
         {},
         {
           withCredentials: true,
@@ -113,7 +113,7 @@ function PharmacistReqs() {
     try {
       console.log(viewReq._id);
       await axios.post(
-        `http://localhost:8001/admin/applications/reject-registeration/${viewReq._id}`,
+        `https://medd-9.onrender.com/admin/applications/reject-registeration/${viewReq._id}`,
         {},
         {
           withCredentials: true,

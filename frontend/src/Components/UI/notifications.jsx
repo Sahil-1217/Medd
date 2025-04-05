@@ -19,7 +19,7 @@ const Notifications = ({ notifications }) => {
       setIsPopoverOpen(false);
     }
     setCurrentNotifications(updatedNotifications);
-    const response = await axios.post('http://localhost:8001/deleteNotif', {notif:notificationD}, {
+    const response = await axios.post('https://medd-9.onrender.com/deleteNotif', {notif:notificationD}, {
         withCredentials: true,
       });
       

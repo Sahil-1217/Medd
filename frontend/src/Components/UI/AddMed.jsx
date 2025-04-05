@@ -73,7 +73,7 @@ export const AddMedicine = () => {
 
     try {
      
-      const response = await axios.post('http://localhost:8001/pharmacist/createMedicine', formData, {
+      const response = await axios.post('https://medd-9.onrender.com/pharmacist/createMedicine', formData, {
         withCredentials: true,
         headers: {
           'Content-Type': 'multipart/form-data',

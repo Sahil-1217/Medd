@@ -43,7 +43,7 @@ const AdminRegisterForm = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await Axios.post('http://localhost:8001/administration', formData);
+      const response = await Axios.post('https://medd-9.onrender.com/administration', formData);
       if (response.data.message !== 'Admin already exists') {
         toast({
           title: 'Registration Successful',

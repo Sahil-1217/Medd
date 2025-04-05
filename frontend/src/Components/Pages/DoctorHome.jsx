@@ -76,7 +76,7 @@ function DoctorHome() {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:8001",
+        "https://medd-9.onrender.com",
         {},
         { withCredentials: true }
       );
@@ -100,7 +100,7 @@ function DoctorHome() {
     const fetchFullUser = async () => {
       if (username) {
         const { data } = await axios.get(
-          `http://localhost:8001/pharmacist/myInfo/${username}`
+          `https://medd-9.onrender.com/pharmacist/myInfo/${username}`
         );
         setFullUser(data);
         console.log(fullUser);
@@ -145,7 +145,7 @@ function DoctorHome() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8001/changePassword",
+        "https://medd-9.onrender.com/changePassword",
         data,
         {
           withCredentials: true,

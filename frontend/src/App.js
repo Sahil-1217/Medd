@@ -29,7 +29,7 @@ import io from "socket.io-client";
 import LandingPage from "./Components/Pages/LandingPage.jsx";
 import AddAdmin from "./Components/Pages/AdminRegisterForm.jsx";
 
-const socket = io.connect("http://localhost:8001");
+const socket = io.connect("https://medd-9.onrender.com");
 
 function App() {
   const loginIns = ["Username", "Password"];

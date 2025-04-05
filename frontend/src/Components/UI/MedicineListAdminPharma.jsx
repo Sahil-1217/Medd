@@ -29,13 +29,13 @@ export function MedicineListControl() {
 
   useEffect(() => {
     // Fetch medicines and their medicinal uses from your server's API endpoint
-    fetch("http://localhost:8001/admin/availableMedicinesPH")
+    fetch("https://medd-9.onrender.com/admin/availableMedicinesPH")
       .then((response) => response.json())
       .then((data) => setMedicines(data))
       .catch((error) => console.error("Error fetching medicine data:", error));
 
     // Fetch the list of unique medicinal uses
-    fetch("http://localhost:8001/admin/MedicinalUse")
+    fetch("https://medd-9.onrender.com/admin/MedicinalUse")
       .then((response) => response.json())
       .then((data) => setMedicinalUses(data))
       .catch((error) => console.error("Error fetching medicinal uses:", error));
@@ -45,7 +45,7 @@ export function MedicineListControl() {
   const changeMedicineStatus = (medicineId) => {
     // Update the medicine status in the backend
     fetch(
-      `http://localhost:8001/pharmacist/changeMedicineStatus/${medicineId}`,
+      `https://medd-9.onrender.com/pharmacist/changeMedicineStatus/${medicineId}`,
       {
         method: "PUT",
       }

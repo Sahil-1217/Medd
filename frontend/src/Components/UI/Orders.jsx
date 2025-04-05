@@ -11,7 +11,7 @@ function Orders({currentMonth}) {
             
             try {
                 
-                const response = await axios.post('http://localhost:8001/order/salesOrder', { month:currentMonth }, { withCredentials: true });
+                const response = await axios.post('https://medd-9.onrender.com/order/salesOrder', { month:currentMonth }, { withCredentials: true });
                 console.log(response.data);
                 setOrders(response.data);
             } catch (error) {

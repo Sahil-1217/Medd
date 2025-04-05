@@ -50,7 +50,7 @@ export const Login = () => {
     const pass = document.getElementById("password").value;
     try {
       const { data } = await axios.post(
-        "http://localhost:8001/login",
+        "https://medd-9.onrender.com/login",
         {
           username: user,
           password: pass,

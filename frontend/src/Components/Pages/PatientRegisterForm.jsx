@@ -70,7 +70,7 @@ const PatientRegisterForm = () => {
   const onSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await Axios.post('http://localhost:8001/Patientregister', formData);
+      const response = await Axios.post('https://medd-9.onrender.com/Patientregister', formData);
       if(response.data.message!=='User already exists'){
         toast({
           title: 'Registration Successful',

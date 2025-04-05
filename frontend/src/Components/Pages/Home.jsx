@@ -77,7 +77,7 @@ export const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:8001",
+        "https://medd-9.onrender.com",
         {},
         { withCredentials: true }
       );
@@ -88,7 +88,7 @@ export const Home = () => {
           position: "top-right",
         });
         const fullUserData = await axios.get(
-          `http://localhost:8001/patient/myInfo/${user}`
+          `https://medd-9.onrender.com/patient/myInfo/${user}`
         );
         setFullUser(fullUserData.data);
       } else {
@@ -115,7 +115,7 @@ export const Home = () => {
   //     console.log("in1");
   //     if (username) {
   //       console.log("in2");
-  //       const { data } = await axios.get(`http://localhost:8001/patient/myInfo/${username}`);
+  //       const { data } = await axios.get(`https://medd-9.onrender.com/patient/myInfo/${username}`);
   //       setFullUser(data);
   //       console.log(fullUser);
   //     }
@@ -157,7 +157,7 @@ export const Home = () => {
           ""
         );
       const response = await axios.post(
-        `http://localhost:8001/patient/addDeliveryAddress/${username}`,
+        `https://medd-9.onrender.com/patient/addDeliveryAddress/${username}`,
         { address: newAddress },
         { withCredentials: true }
       );
@@ -215,7 +215,7 @@ export const Home = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8001/changePassword",
+        "https://medd-9.onrender.com/changePassword",
         data,
         {
           withCredentials: true,

@@ -103,7 +103,7 @@ export const AdminHome = () => {
     const fetchFullUser = async () => {
       if (username) {
         const { data } = await axios.get(
-          `http://localhost:8001/admin/myInfo/${username}`
+          `https://medd-9.onrender.com/admin/myInfo/${username}`
         );
         setFullUser(data);
         console.log(fullUser);
@@ -134,7 +134,7 @@ export const AdminHome = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8001/changePassword",
+        "https://medd-9.onrender.com/changePassword",
         data,
         {
           withCredentials: true,
