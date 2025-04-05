@@ -19,7 +19,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://medd-9.onrender.com/", // Update this if deploying frontend separately
+    origin: "https://medd-9.onrender.com", // Update this if deploying frontend separately
     methods: ["GET", "POST"],
   },
 });
@@ -57,7 +57,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://medd-9.onrender.com/", // Change to frontend domain if deploying
+  origin: "https://medd-9.onrender.com", // Change to frontend domain if deploying
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
