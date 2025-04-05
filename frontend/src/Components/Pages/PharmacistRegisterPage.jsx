@@ -224,7 +224,7 @@ const PharmacistRegisterPage = () => {
                       formData.educational_background !== '' &&
                       formData.hourly_rate!== '' &&
                     formData.IDDocument !== null &&
-                    formData. pharmacyDegreeDocument !== null &&
+                    formData.pharmacyDegreeDocument !== null &&
                     formData.workingLicenseDocument!== null ? 
                       
                       

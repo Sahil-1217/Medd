@@ -89,7 +89,7 @@ export function MedicineListwithSales() {
             <Box key={medicine._id} w='100%' p={4} borderWidth="10px" borderRadius="md">
               <Text>Name: {medicine.Name}</Text>
               <Text>Details: {medicine.Details}</Text>
-              <Text>Price: ${medicine.Price}</Text>
+              <Text>Price: {medicine.Price}</Text>
               <Text>Available Quantity: {medicine.Quantity}</Text>
               <Text>Sales: {medicine.Sales}</Text>
               <Button size="sm" colorScheme="teal" onClick={() => openEditModal(medicine)}>Edit</Button>

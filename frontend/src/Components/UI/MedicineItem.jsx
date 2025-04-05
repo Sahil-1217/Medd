@@ -3,14 +3,6 @@ import { Buffer } from 'buffer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-import {
-  Button,
-  NumberInput,
-  NumberInputField,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
-} from '@chakra-ui/react';
 
 const MedicineItem = ({ medicine, addToCart }) => {
   const [quantity, setQuantity] = useState(1);

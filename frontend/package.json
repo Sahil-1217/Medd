@@ -5,6 +5,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.1",
+    "@csstools/normalize.css": "^12.1.1",
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
@@ -22,9 +23,11 @@
     "buffer": "^6.0.3",
     "buffers": "^0.1.1",
     "formik": "^2.4.5",
-    "imagefrombuffer": "^1.0.12",
+    "frontend": "file:",
     "mdb-react-ui-kit": "^7.0.0",
     "mdbreact": "^5.2.0",
+    "Medd-stack-pharmacy": "file:..",
+    "nodemon": "^3.1.9",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
@@ -66,5 +69,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "postcss-normalize": "^13.0.1"
   }
 }

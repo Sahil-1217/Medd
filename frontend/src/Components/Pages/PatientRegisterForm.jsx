@@ -66,6 +66,7 @@ const PatientRegisterForm = () => {
   };
   
   const back =()=>  navigate(-1);
+  
   const onSubmit = async e => {
     e.preventDefault();
     try {
