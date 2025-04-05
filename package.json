@@ -2,10 +2,18 @@
   "name": "Medd-stack-pharmacy",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "server.js",
   "scripts": {
     "build": "npm install && cd frontend && npm install && npm run build",
     "start": "node server.js"
+=======
+  "main": "backend/src/app.js",
+  "scripts": {
+      "build": "npm install && cd frontend && npm install && npm run build",
+      "start": "node backend/src/app.js",
+      "dev": "nodemon backend/src/app.js"
+>>>>>>> 8ed406377aad855c7d35d769414911513475e631
   },
   "author": "",
   "license": "ISC",
